@@ -33,7 +33,7 @@ export default function Form(){
                             type='checkbox'
                             id="remember"
                         />
-                        <label className='ml-2 font-medium text-base' for="remember">Recordarme</label>
+                        <label className='ml-2 font-medium text-base' htmlFor="remember">Recordarme</label>
                     </div>
                     <Link to="/Olvidaste">
                         <button className='font-medium text-base text-blue-500'>¿Olvidaste tú contraseña?</button>
