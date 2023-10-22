@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function Inicio() {
   const handlePropositoClick = () => {
     // Aquí puedes agregar la lógica para el botón "Propósito de Entrenamiento"
-    alert('Botón "Propósito de Entrenamiento" clicado');
+    
   };
 
   const handlePaquetesClick = () => {
@@ -18,7 +18,7 @@ function Inicio() {
 
   const handleUsuariosClick = () => {
     // Aquí puedes agregar la lógica para el botón "Usuarios"
-    alert('Botón "Usuarios" clicado');
+   
   };
 
   const handleHorariosClick = () => {
@@ -40,12 +40,15 @@ function Inicio() {
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold mb-6">Página Principal</h1>
       <div className="grid grid-cols-2 gap-4">
+        <Link to="/Proposito">
+
         <button
           onClick={handlePropositoClick}
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-lg"
         >
           Propósito de Entrenamiento
         </button>
+        </Link>
         <button
           onClick={handlePaquetesClick}
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-lg"
@@ -59,13 +62,17 @@ function Inicio() {
         >
           Información del Gimnasio
         </button>
-        </Link>
+        </Link >
+
+        
         <button
           onClick={handleUsuariosClick}
           className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-4 px-6 rounded-lg"
         >
           Usuarios
         </button>
+        
+        
         <button
           onClick={handleHorariosClick}
           className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-6 rounded-lg"

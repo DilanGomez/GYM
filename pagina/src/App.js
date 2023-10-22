@@ -7,6 +7,11 @@ import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import firebase,{FirebaseContext} from './firebase'
 import Inicio from './components/Inicio';
 import InfoGym from './components/InfoGym';
+import Proposito from "./components/Proposito";
+
+
+
+
 
 
 function App() {
@@ -24,6 +29,12 @@ function App() {
               <Route path='/Olvidaste' element={<Olvidar/>}/>
               <Route path='/Inicio' element={<Inicio/>}/>
               <Route path='/Info' element={<InfoGym/>}/>
+              <Route path='/Proposito' element={<Proposito/>}/>
+              
+              
+              
+
+              
 
           </Routes>
         </Router>
